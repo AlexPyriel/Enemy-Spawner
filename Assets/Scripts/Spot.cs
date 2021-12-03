@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SpawnSpot : MonoBehaviour
+public class Spot : MonoBehaviour
 {
     private void Awake()
     {

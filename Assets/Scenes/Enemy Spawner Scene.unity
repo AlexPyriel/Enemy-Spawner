@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4776462799909311149, guid: 78160cdea4ceb4a7c9f8b42bcc06b454, type: 3}
       propertyPath: m_Name
-      value: Spawn Spot (1)
+      value: Spot (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4776462799909311149, guid: 78160cdea4ceb4a7c9f8b42bcc06b454, type: 3}
       propertyPath: m_IsActive
@@ -198,7 +198,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4776462799909311149, guid: 78160cdea4ceb4a7c9f8b42bcc06b454, type: 3}
       propertyPath: m_Name
-      value: Spawn Spot (3)
+      value: Spot (3)
       objectReference: {fileID: 0}
     - target: {fileID: 4776462799909311149, guid: 78160cdea4ceb4a7c9f8b42bcc06b454, type: 3}
       propertyPath: m_IsActive
@@ -357,7 +357,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4776462799909311149, guid: 78160cdea4ceb4a7c9f8b42bcc06b454, type: 3}
       propertyPath: m_Name
-      value: Spawn Spot (2)
+      value: Spot (2)
       objectReference: {fileID: 0}
     - target: {fileID: 4776462799909311149, guid: 78160cdea4ceb4a7c9f8b42bcc06b454, type: 3}
       propertyPath: m_IsActive
@@ -623,7 +623,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4776462799909311149, guid: 78160cdea4ceb4a7c9f8b42bcc06b454, type: 3}
       propertyPath: m_Name
-      value: Spawn Spot (4)
+      value: Spot (4)
       objectReference: {fileID: 0}
     - target: {fileID: 4776462799909311153, guid: 78160cdea4ceb4a7c9f8b42bcc06b454, type: 3}
       propertyPath: m_RootOrder
@@ -754,7 +754,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4776462799909311149, guid: 78160cdea4ceb4a7c9f8b42bcc06b454, type: 3}
       propertyPath: m_Name
-      value: Spawn Spot
+      value: Spot
       objectReference: {fileID: 0}
     - target: {fileID: 4776462799909311149, guid: 78160cdea4ceb4a7c9f8b42bcc06b454, type: 3}
       propertyPath: m_IsActive

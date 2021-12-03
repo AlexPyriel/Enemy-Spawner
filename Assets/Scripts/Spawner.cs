@@ -6,13 +6,13 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Enemy _enemy;
     [SerializeField] private Transform _target;
 
-    private SpawnSpot[] _spawnSpots;
+    private Spot[] _spots;
     private float _spawnDelay = 2f;
 
     private void Awake()
     {
-        _spawnSpots = GetComponentsInChildren<SpawnSpot>();
-        if (_spawnSpots.Length == 0)
+        _spots = GetComponentsInChildren<Spot>();
+        if (_spots.Length == 0)
         {
             Debug.LogError("Spawn spots game objects missing");
         }
@@ -20,18 +20,19 @@ public class Spawner : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(SpawnRoutine());
+        StartCoroutine(SpawnEnemy());
     }
 
-    private IEnumerator SpawnRoutine()
+    private IEnumerator SpawnEnemy()
     {
-        while (_spawnSpots.Length != 0)
+        while (_spots.Length != 0)
         {
-            int randomIndex = Random.Range(0, _spawnSpots.Length);
-            Vector3 spawnPosition = _spawnSpots[randomIndex].transform.position;
+            var waitForSeconds = new WaitForSeconds(_spawnDelay);
+            int randomIndex = Random.Range(0, _spots.Length);
+            Vector3 spawnPosition = _spots[randomIndex].transform.position;
             Enemy enemy = Instantiate(_enemy, spawnPosition, Quaternion.identity);
             enemy.Init(_target);
-            yield return new WaitForSeconds(_spawnDelay);
+            yield return waitForSeconds;
         }
     }
 }
