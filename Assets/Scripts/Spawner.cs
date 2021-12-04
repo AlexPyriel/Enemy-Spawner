@@ -25,9 +25,10 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator SpawnEnemy()
     {
+        var waitForSeconds = new WaitForSeconds(_spawnDelay);
+
         while (_spots.Length != 0)
         {
-            var waitForSeconds = new WaitForSeconds(_spawnDelay);
             int randomIndex = Random.Range(0, _spots.Length);
             Vector3 spawnPosition = _spots[randomIndex].transform.position;
             Enemy enemy = Instantiate(_enemy, spawnPosition, Quaternion.identity);
